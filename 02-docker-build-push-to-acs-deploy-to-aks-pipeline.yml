@@ -51,8 +51,8 @@ stages:
   jobs:
   - deployment: Deploy
     displayName: Deploy
-    pool:
-      vmImage: Default # $(vmImageName)
+    pool: Default
+     # vmImage: # $(vmImageName)
     environment: 'skocaboyazuredevopsacraksapp1.default'
     strategy:
       runOnce:
